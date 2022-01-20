@@ -1,0 +1,16 @@
+RoleManagement As screen:
+    OnVisible: =
+
+    Label2 As label:
+        Text: =my_roles
+        X: =312
+        Y: =192
+        ZIndex: =1
+
+    Button2 As button:
+        OnSelect: =ClearCollect(my_roles, Azure_RoleManagement.RoleEligibilityScheduleRequests())
+        Text: ="Button"
+        X: =312
+        Y: =104
+        ZIndex: =2
+

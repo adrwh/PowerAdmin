@@ -1,0 +1,89 @@
+{
+  "ComponentIndexes": {
+    "Component1": 4
+  },
+  "ControlUniqueIds": {
+    "About": 12,
+    "App": 1,
+    "Button1": 8,
+    "Button2": 10,
+    "Button3": 6,
+    "Button3_1": 7,
+    "Button4": 24,
+    "Button5": 25,
+    "Button5_1": 26,
+    "Component1": 3,
+    "Home": 4,
+    "Label1": 5,
+    "Label2": 11,
+    "Label3": 13,
+    "Label4": 15,
+    "Label5": 34,
+    "Label5_1": 35,
+    "RoleManagement": 9,
+    "txtUsernameLifecycle": 16,
+    "UserLifecycle": 14
+  },
+  "FunctionParamsInvariantScripts": {},
+  "HeaderLastSavedDateTimeUTC": "01/20/2022 22:02:47",
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {
+    "178a068ff4e24675a61a86a736e82c59": 0
+  },
+  "OrderComponentTemplate": {
+    "178a068ff4e24675a61a86a736e82c59": 0
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 2,
+    "ListboxSample": 1,
+    "my_roles": 3,
+    "OktaAPI": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 1,
+    "label": 0,
+    "text": 2
+  },
+  "PublishOrderIndices": {
+    "About": 0,
+    "App": 0,
+    "Button1": 3,
+    "Button2": 4,
+    "Button3": 1,
+    "Button3_1": 2,
+    "Button4": 11,
+    "Button5": 12,
+    "Button5_1": 13,
+    "Component1": 0,
+    "Home": 0,
+    "Label1": 0,
+    "Label2": 5,
+    "Label3": 6,
+    "Label4": 7,
+    "Label5": 9,
+    "Label5_1": 10,
+    "RoleManagement": 0,
+    "txtUsernameLifecycle": 8,
+    "UserLifecycle": 0
+  },
+  "ResourcesJsonIndices": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.2491239,
+    "ControlCount": {
+      "178a068ff4e24675a61a86a736e82c59": 1,
+      "button": 7,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "label": 11,
+      "screen": 4,
+      "text": 1
+    },
+    "DeserializationLoadTime": 0.5971528,
+    "ErrorCount": 3
+  }
+}

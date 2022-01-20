@@ -1,0 +1,34 @@
+Home As screen:
+
+    Label1 As label:
+        Align: =Right
+        AutoHeight: =true
+        Height: =134
+        Size: =40
+        Text: ="PowerAdmin"
+        Width: =344
+        X: =1012
+        ZIndex: =1
+
+    Button1 As button:
+        Height: =71
+        OnSelect: =Navigate(About)
+        Text: ="About PowerAdmin"
+        Width: =177
+        X: =1179
+        Y: =690
+        ZIndex: =2
+
+    Button3 As button:
+        OnSelect: =Navigate(UserLifecycle)
+        Text: ="User Lifecycle"
+        X: =188
+        Y: =196
+        ZIndex: =3
+
+    Button3_1 As button:
+        Text: ="User Directory"
+        X: =188
+        Y: =251
+        ZIndex: =4
+

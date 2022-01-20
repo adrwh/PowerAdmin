@@ -1,0 +1,67 @@
+UserLifecycle As screen:
+
+    Label4 As label:
+        Height: =171
+        Text: |-
+            ="This screen will find the user
+            clear their sessions
+            set status to suspended
+            revoke their azuread sessions
+            block their azure signin
+            convert their mailbox to shared
+            assign permissions to another person"
+        Width: =341
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    txtUsernameLifecycle As text:
+        Default: ="bob.fork@hillsong.io"
+        HintText: ="UPN / Email"
+        X: =395
+        Y: =40
+        ZIndex: =2
+
+    Button4 As button:
+        OnSelect: |-
+            =UpdateContext({user:OktaAPI.getUser(txtUsernameLifecycle.Text)})
+        Text: |-
+            ="Get from Okta
+            "
+        X: =475
+        Y: =105
+        ZIndex: =4
+
+    Button5 As button:
+        Height: =45
+        Text: |-
+            ="Clear Okta Sessions
+            "
+        Width: =227
+        X: =473
+        Y: =307
+        ZIndex: =5
+
+    Button5_1 As button:
+        Height: =45
+        OnSelect: =OktaAPI.suspendUser(user.id)
+        Text: ="Suspend User"
+        Width: =227
+        X: =475
+        Y: =364
+        ZIndex: =6
+
+    Label5 As label:
+        Text: =user.id
+        Width: =325
+        X: =900
+        Y: =40
+        ZIndex: =7
+
+    Label5_1 As label:
+        Text: =user.status
+        Width: =325
+        X: =900
+        Y: =80
+        ZIndex: =8
+

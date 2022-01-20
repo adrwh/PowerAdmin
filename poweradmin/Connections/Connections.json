@@ -1,0 +1,20 @@
+{
+  "0957e137-0753-4b66-923a-9d59be5206e4": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_okta-5f4cff97c46859077d-5f33427309fbdd9d3d/connections/ccdfc0da27794bc1af76d24ce41cc4ff",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Okta",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_okta-5f4cff97c46859077d-5f33427309fbdd9d3d"
+    },
+    "datasets": {},
+    "dataSources": [
+      "OktaAPI"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0957e137-0753-4b66-923a-9d59be5206e4"
+  }
+}

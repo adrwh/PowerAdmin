@@ -1,0 +1,217 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://australia-001.azure-apim.net/apim/okta-5f4cff97c46859077d-5f33427309fbdd9d3d" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="OktaAPI" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Okta API">Allows customers to easily access the Okta API</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://australia-001.azure-apim.net/apim/okta-5f4cff97c46859077d-5f33427309fbdd9d3d" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <object name="User__embedded_def_mapValues_def" />
+      <mapObject name="User__embedded_def">
+        <values typeRef="User__embedded_def_mapValues_def" />
+      </mapObject>
+      <object name="User__links_def_mapValues_def" />
+      <mapObject name="User__links_def">
+        <values typeRef="User__links_def_mapValues_def" />
+      </mapObject>
+      <dateTimeString name="User_activated_def" />
+      <dateTimeString name="User_created_def" />
+      <string name="User_id_def" />
+      <dateTimeString name="User_lastLogin_def" />
+      <dateTimeString name="User_lastUpdated_def" />
+      <dateTimeString name="User_passwordChanged_def" />
+      <dateTimeString name="User_statusChanged_def" />
+      <object name="User">
+        <property name="_embedded" typeRef="User__embedded_def" />
+        <property name="_links" typeRef="User__links_def" />
+        <property name="activated" typeRef="User_activated_def" />
+        <property name="created" typeRef="User_created_def" />
+        <property name="credentials" typeRef="UserCredentials" />
+        <property name="id" type="string" />
+        <property name="lastLogin" typeRef="User_lastLogin_def" />
+        <property name="lastUpdated" typeRef="User_lastUpdated_def" />
+        <property name="passwordChanged" typeRef="User_passwordChanged_def" />
+        <property name="profile" typeRef="UserProfile" />
+        <property name="status" type="string" />
+        <property name="statusChanged" typeRef="User_statusChanged_def" />
+        <property name="transitioningToStatus" type="string" />
+        <property name="type" typeRef="UserType" />
+      </object>
+      <object name="UserCredentials">
+        <property name="password" typeRef="PasswordCredential" />
+        <property name="provider" typeRef="AuthenticationProvider" />
+        <property name="recovery_question" typeRef="RecoveryQuestionCredential" />
+      </object>
+      <string name="UserProfile_city_def" />
+      <string name="UserProfile_costCenter_def" />
+      <string name="UserProfile_countryCode_def" />
+      <string name="UserProfile_department_def" />
+      <string name="UserProfile_displayName_def" />
+      <string name="UserProfile_division_def" />
+      <string name="UserProfile_email_def" />
+      <string name="UserProfile_employeeNumber_def" />
+      <string name="UserProfile_firstName_def" />
+      <string name="UserProfile_honorificPrefix_def" />
+      <string name="UserProfile_honorificSuffix_def" />
+      <string name="UserProfile_lastName_def" />
+      <string name="UserProfile_locale_def" />
+      <string name="UserProfile_login_def" />
+      <string name="UserProfile_manager_def" />
+      <string name="UserProfile_managerId_def" />
+      <string name="UserProfile_middleName_def" />
+      <string name="UserProfile_mobilePhone_def" />
+      <string name="UserProfile_nickName_def" />
+      <string name="UserProfile_organization_def" />
+      <string name="UserProfile_postalAddress_def" />
+      <string name="UserProfile_preferredLanguage_def" />
+      <string name="UserProfile_primaryPhone_def" />
+      <string name="UserProfile_profileUrl_def" />
+      <string name="UserProfile_secondEmail_def" />
+      <string name="UserProfile_state_def" />
+      <string name="UserProfile_streetAddress_def" />
+      <string name="UserProfile_timezone_def" />
+      <string name="UserProfile_title_def" />
+      <string name="UserProfile_userType_def" />
+      <string name="UserProfile_zipCode_def" />
+      <object name="UserProfile">
+        <property name="city" type="string" />
+        <property name="costCenter" type="string" />
+        <property name="countryCode" type="string" />
+        <property name="department" type="string" />
+        <property name="displayName" type="string" />
+        <property name="division" type="string" />
+        <property name="email" type="string" />
+        <property name="employeeNumber" type="string" />
+        <property name="firstName" type="string" />
+        <property name="honorificPrefix" type="string" />
+        <property name="honorificSuffix" type="string" />
+        <property name="lastName" type="string" />
+        <property name="locale" type="string" />
+        <property name="login" type="string" />
+        <property name="manager" type="string" />
+        <property name="managerId" type="string" />
+        <property name="middleName" type="string" />
+        <property name="mobilePhone" type="string" />
+        <property name="nickName" type="string" />
+        <property name="organization" type="string" />
+        <property name="postalAddress" type="string" />
+        <property name="preferredLanguage" type="string" />
+        <property name="primaryPhone" type="string" />
+        <property name="profileUrl" type="string" />
+        <property name="secondEmail" type="string" />
+        <property name="state" type="string" />
+        <property name="streetAddress" type="string" />
+        <property name="timezone" type="string" />
+        <property name="title" type="string" />
+        <property name="userType" type="string" />
+        <property name="zipCode" type="string" />
+      </object>
+      <string name="UserStatus" />
+      <object name="UserType__links_def_mapValues_def" />
+      <mapObject name="UserType__links_def">
+        <values typeRef="UserType__links_def_mapValues_def" />
+      </mapObject>
+      <dateTimeString name="UserType_created_def" />
+      <string name="UserType_createdBy_def" />
+      <boolean name="UserType_default_def" />
+      <string name="UserType_description_def" />
+      <string name="UserType_displayName_def" />
+      <string name="UserType_id_def" />
+      <dateTimeString name="UserType_lastUpdated_def" />
+      <string name="UserType_lastUpdatedBy_def" />
+      <string name="UserType_name_def" />
+      <object name="UserType">
+        <property name="_links" typeRef="UserType__links_def" />
+        <property name="created" typeRef="UserType_created_def" />
+        <property name="createdBy" type="string" />
+        <property name="default" type="boolean" />
+        <property name="description" type="string" />
+        <property name="displayName" type="string" />
+        <property name="id" type="string" />
+        <property name="lastUpdated" typeRef="UserType_lastUpdated_def" />
+        <property name="lastUpdatedBy" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <string name="PasswordCredential_value_def" />
+      <object name="PasswordCredential">
+        <property name="hash" typeRef="PasswordCredentialHash" />
+        <property name="hook" typeRef="PasswordCredentialHook" />
+        <property name="value" type="string" />
+      </object>
+      <string name="PasswordCredentialHash_salt_def" />
+      <string name="PasswordCredentialHash_saltOrder_def" />
+      <string name="PasswordCredentialHash_value_def" />
+      <integer name="PasswordCredentialHash_workFactor_def" />
+      <object name="PasswordCredentialHash">
+        <property name="algorithm" type="string" />
+        <property name="salt" type="string" />
+        <property name="saltOrder" type="string" />
+        <property name="value" type="string" />
+        <property name="workFactor" type="integer" />
+      </object>
+      <string name="PasswordCredentialHashAlgorithm" />
+      <string name="PasswordCredentialHook_type_def" />
+      <object name="PasswordCredentialHook">
+        <property name="type" type="string" />
+      </object>
+      <string name="AuthenticationProvider_name_def" />
+      <object name="AuthenticationProvider">
+        <property name="name" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <string name="AuthenticationProviderType" />
+      <string name="RecoveryQuestionCredential_answer_def" />
+      <string name="RecoveryQuestionCredential_question_def" />
+      <object name="RecoveryQuestionCredential">
+        <property name="answer" type="string" />
+        <property name="question" type="string" />
+      </object>
+      <array typeRef="User" name="ListUsers_responses_200_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://australia-001.azure-apim.net/apim/okta-5f4cff97c46859077d-5f33427309fbdd9d3d">
+    <resource path="/{connectionId}/api/v1/users">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListUsers" siena:isDeprecated="false">
+        <doc title="ListUsers" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ListUsers_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/v1/users/{userId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="userId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="getUser" siena:isDeprecated="false">
+        <doc title="Get User&#xA;Fetches a user from your Okta organization." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:User" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/v1/users/{userId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="userId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="DELETE" id="deactivateOrDeleteUser" siena:isDeprecated="false">
+        <doc title="Delete User&#xA;Deletes a user permanently.  This operation can only be performed on users that have a `DEPROVISIONED` status.  **This action cannot be recovered!**" />
+        <request>
+          <param style="query" name="sendEmail" type="xs:boolean" default="false" />
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/v1/users/{userId}/lifecycle/suspend">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="userId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="suspendUser" siena:isDeprecated="false">
+        <doc title="Suspend User&#xA;Suspends a user.  This operation can only be performed on users with an `ACTIVE` status.  The user will have a status of `SUSPENDED` when the process is complete." />
+        <request />
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_okta-5f4cff97c46859077d-5f33427309fbdd9d3d" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
