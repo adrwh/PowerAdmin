@@ -20,12 +20,13 @@
     "Label4": 15,
     "Label5": 34,
     "Label5_1": 35,
+    "Label6": 36,
     "RoleManagement": 9,
     "txtUsernameLifecycle": 16,
     "UserLifecycle": 14
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "01/20/2022 22:06:17",
+  "HeaderLastSavedDateTimeUTC": "01/20/2022 22:06:35",
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
@@ -66,6 +67,7 @@
     "Label4": 7,
     "Label5": 9,
     "Label5_1": 10,
+    "Label6": 0,
     "RoleManagement": 0,
     "txtUsernameLifecycle": 8,
     "UserLifecycle": 0
